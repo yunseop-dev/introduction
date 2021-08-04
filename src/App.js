@@ -4,6 +4,7 @@ import About from "./pages/About";
 import { Route, useHistory, useLocation } from "react-router-dom";
 import Footprint from "./pages/Footprint";
 import Hobby from "./pages/Hobby";
+import Book from "./pages/Book";
 import Marriage from "./pages/Marriage";
 import Welcome from "./pages/Welcome";
 import { useEffect, useState } from "react";
@@ -40,11 +41,12 @@ const routes = [
   { path: '/about', component: About },
   { path: '/footprint', component: Footprint },
   { path: '/hobby', component: Hobby },
+  { path: '/book', component: Book },
   { path: '/marriage', component: Marriage },
   { path: '/welcome', component: Welcome },
 ]
 
-const pages = ['/', '/about', '/footprint', '/footprint/ngensoft', '/footprint/mealant', '/footprint/creatrip', '/hobby', '/marriage', '/welcome']
+const pages = ['/', '/about', '/footprint', '/footprint/ngensoft', '/footprint/mealant', '/footprint/creatrip', '/hobby', '/book', '/marriage', '/welcome']
 
 const App = () => {
   const history = useHistory();
