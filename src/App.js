@@ -4,6 +4,7 @@ import About from "./pages/About";
 import { Route, useHistory, useLocation } from "react-router-dom";
 import Footprint from "./pages/Footprint";
 import Hobby from "./pages/Hobby";
+import Marriage from "./pages/Marriage";
 
 const Wrapper = styled.div`
   display: flex;
@@ -37,6 +38,7 @@ const pages = [
   { path: '/about', component: About },
   { path: '/footprint', component: Footprint },
   { path: '/hobby', component: Hobby },
+  { path: '/marriage', component: Marriage },
 ]
 
 const App = () => {
