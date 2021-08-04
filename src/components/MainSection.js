@@ -9,4 +9,8 @@ const MainSection = styled.section`
     ${() => sample([FadeIn, SweepToTheRight, Wobble])}
 `
 
+export const CenteredMainSection = styled(MainSection)`
+    text-align: center;
+`
+
 export default MainSection;

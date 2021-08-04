@@ -1,11 +1,12 @@
-import styled from "styled-components";
-const Wrapper = styled.section`
-    text-align: center;
-`
+import { CenteredMainSection as Wrapper } from '../components/MainSection'
+import Ruby from '../components/Ruby'
 
 const Marriage = () => {
     return <Wrapper>
-        <h1>여러분을 초대합니다 </h1>
+        <h1>
+            <Ruby text="여러분을 초대합니다! 💌" translation="I invite you! 💌" />
+
+        </h1>
         <p>
             <a href="https://bojagicard.com/ssshj422" target="_blank" rel="noreferrer">청첩장 바로가기</a>
             <br />
