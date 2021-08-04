@@ -17,9 +17,9 @@ const Footprints = styled.ul`
     &:before {
         display: block;
         position: absolute;
-        left: -1.65rem;
+        left: -1.5rem;
         content: '';
-        width: 8px;
+        width: 4px;
         height: 100%;
         background: black;
     }
@@ -74,7 +74,7 @@ const Footprint = () => {
                 </Footprints>
             </div>
             <Article>
-                <Route path='/footprint' exact render={() => <img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F200F95274C39B4BE9E2019" />} />
+                <Route path='/footprint' exact render={() => <img src="https://img1.daumcdn.net/thumb/R720x0.q80/?scode=mtistory2&fname=http%3A%2F%2Fcfile7.uf.tistory.com%2Fimage%2F200F95274C39B4BE9E2019" alt="footprint" />} />
                 {footprints.map(item => <Route key={item.path} path={item.path} component={item.component} />)}
             </Article>
         </div>

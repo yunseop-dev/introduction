@@ -1,8 +1,8 @@
-import Ruby from '../components/Ruby'
 const Mealant = () => {
     return <>
         <h2>Mealant</h2>
-        <p>
+        <img src="https://www.tabling.co.kr/ssr/img/tabling-face-og.png" alt="mealant logo" />
+        {/* <p>
             <Ruby
                 text='밀랑에 와서 소프트웨어 개발 전반에 걸친 경험을 했어요. DB 설계부터 시작해서 API 개발 및 관리자 페이지까지 다양한 경험들을 했습니다.'
                 translation='When I came to Mealant, I had experience throughout software development. From DB design to API development and admin page, I have had various experiences.'
@@ -19,8 +19,11 @@ const Mealant = () => {
                 text='감사하게도 이곳에서 파일럿 프로젝트로 시작했던 음식점 대기관리 앱이 시장에서 좋은 반응을 얻어서, 회사 메인 비즈니스로 성장해서 피버팅까지 하게 된 경험은 제게 아주 영광스러운 경험이었습니다.'
                 translation="Thankfully, the restaurant waiting management app that started as a pilot project here got a good response in the market, and it was a very honorable experience for me to grow into the company's main business and even pivot."
             />
+        </p> */}
+        <h3>이런 것들을 했어요</h3>
+        <p>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Ysst9vB_UG4?start=76" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </p>
-        <h3>이런 것들을 만들었어요</h3>
         <ul>
             <li>테이블링 매장용 API 개발</li>
             <li>테이블링 파트너센터 프론트엔드 개발</li>

@@ -49,16 +49,16 @@ const About = () => {
                     <li>
                         <Ruby text='요새 관심 갖는 분야는 소프트웨어 학습 및 교육입니다.' translation='My current interest is software learning and education.' />
                     </li>
-                    <li><a href='https://stackshare.io/yunseop-dev' target="_blank">StackShare</a></li>
-                    <li><a href='https://devtimothy.tistory.com' target="_blank"><Ruby text='블로그' translation='Blog' /></a></li>
-                    <li><a href='https://www.facebook.com/frontendmastery' target="_blank">
+                    <li><a href='https://stackshare.io/yunseop-dev' target="_blank" rel="noreferrer">StackShare</a></li>
+                    <li><a href='https://devtimothy.tistory.com' target="_blank" rel="noreferrer"><Ruby text='블로그' translation='Blog' /></a></li>
+                    <li><a href='https://www.facebook.com/frontendmastery' target="_blank" rel="noreferrer">
                         <Ruby text='프론트엔드 마스터리 (운영중인 페이스북 페이지)' translation='Frontend Mastery (Facebook Page what I operate)' />
                     </a></li>
                 </ul>
                 <h3>Tech Stacks</h3>
                 <TechStackList>
-                    {techStacks.map(stack => <TechStackItem>
-                        <img src={stack} width='30' height='30' />
+                    {techStacks.map((stack, index) => <TechStackItem key={index}>
+                        <img src={stack} width='30' height='30' alt={`stack ${index}`} />
                     </TechStackItem>)}
                 </TechStackList>
             </Wrapper>
