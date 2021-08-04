@@ -5,6 +5,7 @@ import { Route, useHistory, useLocation } from "react-router-dom";
 import Footprint from "./pages/Footprint";
 import Hobby from "./pages/Hobby";
 import Marriage from "./pages/Marriage";
+import { useEffect, useState } from "react";
 
 const Wrapper = styled.div`
   display: flex;
@@ -33,7 +34,7 @@ const Button = styled.button`
   }
 `
 
-const pages = [
+const routes = [
   { path: '/', component: Greetings, exact: true },
   { path: '/about', component: About },
   { path: '/footprint', component: Footprint },
@@ -41,17 +42,33 @@ const pages = [
   { path: '/marriage', component: Marriage },
 ]
 
+const pages = ['/', '/about', '/footprint', '/footprint/ngensoft', '/footprint/mealant', '/footprint/creatrip', '/hobby', '/marriage']
+
 const App = () => {
   const history = useHistory();
   const location = useLocation();
-  function movePage(to) {
-    const current = pages.findIndex(page => page.path === location.pathname)
-    const path = pages?.[current + to]?.path
-    if (path) history.push(path)
+  const [currentPage, setCurrentPage] = useState(0)
+
+  function movePage(position) {
+    const page = pages?.[currentPage + position]
+    if (page) {
+      history.push(page)
+    }
   }
+
+  useEffect(() => {
+    const page = pages.findIndex(page => page === location.pathname)
+    setCurrentPage(page);
+  })
+
+  useEffect(() => {
+    const page = pages.findIndex(page => page === location.pathname)
+    setCurrentPage(page);
+  }, [location])
+
   return (
     <Wrapper>
-      {pages.map(page => <Route key={page.path} path={page.path} component={page.component} exact={page.exact} />)}
+      {routes.map(page => <Route key={page.path} path={page.path} component={page.component} exact={page.exact} />)}
       <FixedBottomRight>
         <Button onClick={() => movePage(-1)}>◀️</Button>
         <Button onClick={() => movePage(1)}>▶️</Button>
