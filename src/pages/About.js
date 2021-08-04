@@ -1,12 +1,9 @@
 import styled from "styled-components";
-import FadeIn from '../css/FadeIn'
+import MainSection from "../components/MainSection";
+import Wrapper from "../components/MarginedDiv";
 import techStacks from "../constants/techStacks";
 import Ruby from "../components/Ruby";
 import me from '../assets/IMG_1316.JPG'
-const MainSection = styled.section`
-    max-width: 1024px;
-    ${FadeIn}
-`
 const TechStackList = styled.ul`
     display: flex;
     flex-wrap: wrap;
@@ -21,10 +18,6 @@ const TechStackItem = styled.li`
     border: 1px solid #e6e6e6;
 `
 
-const Wrapper = styled.div`
-    margin: 1rem;
-`;
-
 const About = () => {
     return <MainSection>
         <div style={{ display: 'flex' }}>
@@ -36,6 +29,9 @@ const About = () => {
                 <ul>
                     <li>
                         <Ruby text='김윤섭' translation='Yunseop Kim' />
+                    </li>
+                    <li>
+                        <a href="https://www.16personalities.com/ko/%EC%84%B1%EA%B2%A9%EC%9C%A0%ED%98%95-istj" target="_blank" rel="noreferrer">ISTJ</a>
                     </li>
                     <li>
                         <a href="tel:+821041318560">010-4131-8560</a>

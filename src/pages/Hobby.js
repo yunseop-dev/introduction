@@ -1,14 +1,7 @@
-import styled from "styled-components";
-import FadeIn from '../css/FadeIn'
 import Ruby from "../components/Ruby";
-const MainSection = styled.section`
-    max-width: 1024px;
-    ${FadeIn}
-`
+import MainSection from "../components/MainSection";
+import Wrapper from "../components/MarginedDiv";
 
-const Wrapper = styled.div`
-    margin: 1rem;
-`;
 
 const Hobby = () => {
     return <MainSection>

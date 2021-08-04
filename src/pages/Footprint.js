@@ -1,14 +1,10 @@
 import { Link, Route, useLocation } from "react-router-dom";
 import styled from "styled-components";
-import FadeIn from '../css/FadeIn'
+import MainSection from "../components/MainSection";
 import Creatrip from "./Creatrip";
 import Mealant from "./Mealant";
 import NGensoft from "./NGensoft";
 
-const MainSection = styled.section`
-    max-width: 1024px;
-    ${FadeIn}
-`
 
 const Footprints = styled.ul`
     position: relative;    
