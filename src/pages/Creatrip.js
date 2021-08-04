@@ -16,7 +16,7 @@ const Creatrip = () => {
         <img src="https://www.creatrip.com/creatrip-icons/image-logo.svg" alt="creatrip logo" />
         <h3>이런 것들을 했어요</h3>
         <p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/x6e20tomSW8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x6e20tomSW8" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </p>
         <ul>
             <li>

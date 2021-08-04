@@ -59,7 +59,6 @@ const footprints = [
 
 const Footprint = () => {
     const location = useLocation()
-    console.log(location)
     return (<MainSection>
         <div style={{ display: 'flex' }}>
             <div>
