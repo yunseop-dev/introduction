@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import Greetings from "./pages/Greetings";
 import About from "./pages/About";
+import Residence from "./pages/Residence";
 import { Route, useHistory, useLocation } from "react-router-dom";
 import Footprint from "./pages/Footprint";
 import Hobby from "./pages/Hobby";
@@ -8,6 +9,7 @@ import Book from "./pages/Book";
 import Marriage from "./pages/Marriage";
 import Welcome from "./pages/Welcome";
 import { useEffect, useState } from "react";
+import Quiz from "./pages/Quiz";
 
 const Wrapper = styled.div`
   display: flex;
@@ -39,14 +41,16 @@ const Button = styled.button`
 const routes = [
   { path: '/', component: Greetings, exact: true },
   { path: '/about', component: About },
+  { path: '/residence', component: Residence },
   { path: '/footprint', component: Footprint },
   { path: '/hobby', component: Hobby },
   { path: '/book', component: Book },
   { path: '/marriage', component: Marriage },
   { path: '/welcome', component: Welcome },
+  { path: '/quiz', component: Quiz },
 ]
 
-const pages = ['/', '/about', '/footprint', '/footprint/ngensoft', '/footprint/mealant', '/footprint/creatrip', '/hobby', '/book', '/marriage', '/welcome']
+const pages = ['/', '/about', '/residence', '/footprint', '/footprint/ngensoft', '/footprint/mealant', '/footprint/creatrip', '/hobby', '/book', '/marriage', '/welcome', '/quiz']
 
 const App = () => {
   const history = useHistory();
