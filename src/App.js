@@ -57,6 +57,17 @@ const App = () => {
   }
 
   useEffect(() => {
+    const event = (e) => {
+      if (e.code === 'ArrowLeft') movePage(-1)
+      if (e.code === 'ArrowRight') movePage(1)
+    }
+    window.addEventListener('keydown', event)
+    return () => {
+      window.removeEventListener('keydown', event)
+    }
+  })
+
+  useEffect(() => {
     const page = pages.findIndex(page => page === location.pathname)
     setCurrentPage(page);
   })
