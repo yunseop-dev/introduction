@@ -1,16 +1,16 @@
 import styled from "styled-components";
 
-const Wrapper = styled.ruby`
-    ruby-position: under;
-    & > rt {
-        text-align: left;
-    }
+const Wrapper = styled.span``;
+const Rb = styled.span``;
+const Rt = styled.span`
+    display: block;
+    font-size: 50%;
 `;
 
 const Ruby = ({ text, translation }) =>
     <Wrapper>
-        <rb>{text}</rb>
-        <rt>{translation}</rt>
+        <Rb>{text}</Rb>
+        <Rt>{translation}</Rt>
     </Wrapper>
 
 export default Ruby
