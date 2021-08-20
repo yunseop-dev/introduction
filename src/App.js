@@ -78,7 +78,7 @@ const App = () => {
   useEffect(() => {
     const page = pages.findIndex(page => page === location.pathname)
     setCurrentPage(page);
-  })
+  }, [location.pathname])
 
   useEffect(() => {
     const page = pages.findIndex(page => page === location.pathname)
